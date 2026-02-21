@@ -1,0 +1,105 @@
+/* ---------- Page Layout ---------- */
+
+.auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Card Container ---------- */
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 35px 30px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.auth-container:hover {
+  transform: translateY(-6px);
+}
+
+/* ---------- Heading ---------- */
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #222;
+  font-weight: 700;
+}
+
+/* ---------- Form Groups ---------- */
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ---------- Inputs ---------- */
+
+.form-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* ---------- Buttons ---------- */
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #5a67d8);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.auth-container button:hover {
+  background: linear-gradient(135deg, #5a67d8, #4c51bf);
+  transform: translateY(-1px);
+}
+
+.auth-container button:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 768px) {
+  .auth {
+    flex-direction: column;
+  }
+
+  .auth-container {
+    width: 100%;
+    max-width: 380px;
+  }
+}

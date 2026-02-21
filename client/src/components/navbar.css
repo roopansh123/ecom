@@ -1,0 +1,59 @@
+/* ===========================
+   src/components/navbar.css
+   =========================== */
+
+.navbar {
+  display: flex;
+  flex-direction: row;          /* force horizontal */
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+
+/* "Reputation Roots" title */
+.navbar-tittle {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-tittle h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c1c1e;
+  letter-spacing: -0.3px;
+  margin: 0;
+}
+
+/* Nav links container (Shop | Purchases | Cart icon) */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;           /* <-- THIS fixes the squishing */
+}
+
+/* Each link */
+.navbar-links a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #007AFF;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.navbar-links a:hover {
+  color: #0051a8;
+}
+
+/* Shopping cart icon link */
+.navbar-links a:last-child {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}

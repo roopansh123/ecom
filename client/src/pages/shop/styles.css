@@ -1,0 +1,118 @@
+/* ===========================
+   src/pages/shop/styles.css
+   =========================== */
+
+/* ---------- Shop Page ---------- */
+.shop {
+  padding: 24px 32px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.shop h2 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1c1c1e;
+  margin-bottom: 24px;
+}
+
+/* ---------- Products Grid ---------- */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* ---------- Single Product Card ---------- */
+.product {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.product img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 16px 16px 0 0;   /* rounds only top corners to match card */
+}
+
+/* ---------- Description ---------- */
+.description {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.description h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.description p {
+  font-size: 14px;
+  color: #6e6e73;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.description p:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin-top: 4px;
+}
+
+/* ---------- Add to Cart Button ---------- */
+.add-to-cart-bttn {
+  margin: 0 16px 16px 16px;
+  padding: 12px;
+  background-color: #007AFF;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  width: calc(100% - 32px);
+}
+
+.add-to-cart-bttn:hover {
+  background-color: #0051a8;
+}
+
+.add-to-cart-bttn:active {
+  transform: scale(0.97);
+}
+
+/* ---------- Out of Stock ---------- */
+.stock-quantity {
+  padding: 0 16px 16px 16px;
+}
+
+.stock-quantity h1 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FF3B30;
+  text-align: center;
+}
